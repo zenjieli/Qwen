@@ -1,0 +1,11 @@
+transformers
+accelerate
+tiktoken
+einops
+transformers_stream_generator==0.0.4
+scipy
+optimum
+auto-gptq
+gradio<3.42
+mdtex2html
+https://github.com/Dao-AILab/flash-attention/releases/download/v2.3.4/flash_attn-2.3.4+cu122torch2.1cxx11abiFALSE-cp311-cp311-linux_x86_64.whl

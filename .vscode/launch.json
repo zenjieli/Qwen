@@ -1,0 +1,51 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Web Demo",
+            "type": "python",
+            "request": "launch",
+            "program": "web_demo.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            },
+            "args": [
+                "--server-name",
+                "0.0.0.0",
+                "--max-new-tokens",
+                "2048"
+            ]
+        },
+        {
+            "name": "API",
+            "type": "python",
+            "request": "launch",
+            "program": " openai_api.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            },
+            "args": [
+                "--server-name",
+                "0.0.0.0",
+                "--checkpoint-path",
+                "models/Qwen-14B-Chat-Int4"
+            ]
+            
+        }
+    ]
+}
